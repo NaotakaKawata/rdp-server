@@ -53,7 +53,7 @@ $ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m naotakakawata/ub
 ```
 $ git clone https://github.com/NaotakaKawata/rdp-server
 ```
-次に，試したいROS環境のディレクトリ内の.envファイルを開いて以下の設定を変更する．
+次に，試したいUbuntu環境のディレクトリ内の.envファイルを開いて以下の設定を変更する．
 ```
 root_password=super            #rootのパスワード
 user_name=user                 #作成するuserのユーザ名

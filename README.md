@@ -1,8 +1,8 @@
-# ros-rdp-server
+# rdp-server
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-It is a container with ROS1 environment built that allows remote desktop connection and SSH connection.
+It is a container with Ubuntu environment built that allows remote desktop connection and SSH connection.
 
 ![desktop](https://user-images.githubusercontent.com/38690306/116877481-f7d59000-ac58-11eb-9366-5ac28b5d33a2.jpg)
 
@@ -53,7 +53,7 @@ Clone the following repository.
 ```
 $ git clone https://github.com/NaotakaKawata/rdp-server
 ```
-Next, open the .env file in the directory of the ROS environment you want to try and change the following settings．
+Next, open the .env file in the directory of the Ubuntu environment you want to try and change the following settings．
 ```
 root_password=super            #root password
 user_name=user                 #user name
@@ -69,7 +69,7 @@ For remote desktop and SSH settings, change the config.
 
 Finally, build with the following command.
 ```
-$ cd ros-rdp-server/<ros-distro>/
+$ cd rdp-server/<ubuntu-version>/
 $ Docker-compose up --build
 ```
 
