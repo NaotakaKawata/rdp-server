@@ -41,9 +41,9 @@ Docker Hubのimageをご利用いただく場合，以下のコマンドで実�
 以下の例では13389portでリモートデスクトップ接続，10022portでSSH接続が可能です．
 ```
 #ubuntu18.04
-$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m naotakakawata/ubuntu1804-rdp-server
+$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m -v <ホスト側のマウントしたいディレクトリの絶対パス>:/home/user/Workdir/:rw naotakakawata/ubuntu1804-rdp-server
 #ubuntu20.04
-$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m naotakakawata/ubuntu2004-rdp-server
+$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m -v <ホスト側のマウントしたいディレクトリの絶対パス>:/home/user/Workdir/:rw naotakakawata/ubuntu2004-rdp-server
 ```
 
 ---

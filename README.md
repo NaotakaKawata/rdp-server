@@ -41,9 +41,9 @@ If you use Docker Hub image, you can execute it with the following command.
 In the example below, remote desktop connection is possible with 13389port and SSH connection is possible with 10022port.
 ```
 #ubuntu18.04
-$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m naotakakawata/ubuntu1804-rdp-server
+$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m -v <absolute pathname on host>:/home/user/Workdir/:rw naotakakawata/ubuntu1804-rdp-server
 #ubuntu20.04
-$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m naotakakawata/ubuntu2004-rdp-server
+$ docker run --rm -it -p 13389:3389 -p 10022:22 --shm-size=256m <absolute pathname on host>:/home/user/Workdir/:rw naotakakawata/ubuntu2004-rdp-server
 ```
 
 ---
