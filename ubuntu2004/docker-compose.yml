@@ -9,6 +9,8 @@ services:
           - user_name=$user_name
           - user_password=$user_password
           - host_name=$host_name
+          - http_proxy=$http_proxy
+          - https_proxy=$https_proxy
       container_name: $container_name
       hostname: $host_name
       shm_size: $shm_size

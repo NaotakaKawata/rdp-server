@@ -6,10 +6,10 @@ ARG host_name="Challenger"
 ENV DEBIAN_FRONTEND=noninteractive \
     HOSTNAME=$host_name
 
-#ARG http_proxy=http://proxy_address:port/
-#ARG https_proxy=http://proxy_address:port/
-#ENV HTTP_PROXY=$http_proxy
-#ENV HTTPS_PROXY=$https_proxy
+# ARG http_proxy=http://proxy.example.com:8080
+# ARG https_proxy=https://proxy.example.com:8080
+ENV HTTP_PROXY=$http_proxy
+ENV HTTPS_PROXY=$https_proxy
 
 #Locale and Language setting
 RUN apt-get update && \
